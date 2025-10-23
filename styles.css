@@ -1,0 +1,95 @@
+/* ====== FocusTasks Styles ====== */
+@media (min-width: 481px) {
+  #lists {
+    flex-direction: row;
+  }
+
+  .list-column {
+    flex: 1;
+  }
+}
+
+/* basic page setup */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 1rem;
+  background: #f1f1f5;
+}
+
+/* header and analytics area */
+header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#analytics {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* form section */
+#add-form {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+#task-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #cccccc9d;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #aaaaaa50;
+  border-radius: 5px;
+  background: rgba(231, 255, 224, 0.986);
+  cursor: pointer;
+}
+
+/* lists layout */
+#lists {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.list-column {
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* each task item */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem;
+  border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.item-actions button {
+  margin-left: 0.3rem;
+}
+
+/* accessibility focus */
+:focus {
+  outline: 2px solid rgb(0, 247, 82);
+  outline-offset: 2px;
+}
+

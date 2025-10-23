@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FocusTasks 0163</title> 
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1 id="app-title">FocusTasks 0163</h1> 
+    <div id="analytics" aria-live="assertive">Active: 0 · Done: 0 · Done %: 0.0%</div>
+  </header>
+
+  <main>
+    <section id="controls" >
+      <h2 id="add-heading" class="hidden">Add task</h2>
+      
+      <form id="add-form">
+        <label for="task-input">New task</label>
+        <input id="task-input" name="title" type="text" />
+        <button id="add-button" type="submit">Add</button>
+        <div id="error" role="status" aria-live="assertive"></div>
+      </form>
+      
+    </section>
+
+    <section id="lists">
+      <article class="list-column" >
+        <h2 id="active-heading">Active</h2>
+        <ul id="active-list" tabindex="0"></ul>
+      </article>
+
+      <article class="list-column" >
+        <h2 id="done-heading">Done</h2>
+        <ul id="done-list" ></ul>
+      </article>
+    </section>
+  </main>
+
+  <script src="app.js" ></script>
+</body>
+</html>
